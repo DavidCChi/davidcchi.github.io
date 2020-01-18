@@ -3,21 +3,25 @@ layout: default
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 my-auto">
+        <h1 class="name">David Chi</h1>
+      </div>
+    </div>
+    <div class="d-flex flex-row justify-content-center">
+      <div class="email p-3">
+        <a href="mailto:davidchi8666@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+      </div>
+      <div class="github p-3">
+        <a href="https://github.com/DavidCChi"><i class="fa fa-github" aria-hidden="true"></i></a>
+      </div>
+      <div class="linkedin p-3">
+        <a href="https://www.linkedin.com/in/davidchi8/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+      </div>
+      <div class="resume p-3">
+        <a href="/assets/resume.pdf"><i class="fa fa-file-text" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
 </div>
